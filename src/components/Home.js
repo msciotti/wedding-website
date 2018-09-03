@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import img from '../images/home.jpg';
+import styles from '../components/App.css';
 
 const imageStyle = {
   width: '100%',
@@ -26,16 +27,10 @@ const textStyleA = {
   'font-family': " 'Helvetiva Narrow', sans-serif",
 };
 
-const container = {
-  position: 'relative',
-  'text-align': 'center',
-  color: 'white',
-};
-
 class Home extends Component {
   render() {
     return (
-      <div style={container}>
+      <div className={styles.background}>
         <img src={img} style={imageStyle} />
         <div style={textStyle}>Makayla & Mason</div>
         <div style={textStyleA}>October 5, 2019 - Edgartown, MA</div>

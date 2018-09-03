@@ -29,3 +29,14 @@
     transform: rotate(360deg);
   }
 }
+
+.background {
+  position: 'relative';
+  text-align: 'center';
+  color: 'white';
+  background: url(../images/mvmap.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

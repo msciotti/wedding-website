@@ -1,26 +1,72 @@
-.App {
-  text-align: center;
-  width: 80%;
-  height: auto;
-  margin: 0 auto;
-}
-
-.background {
-  position: 'relative';
-  text-align: 'center';
-  color: 'white';
-  margin-top: 30px;
-  height: 100vh;
-}
-
-.outerPage {
-  text-align: center;
-  background-color: #f0f0f5;
-  height: 100vh;
-}
-
 .centerImage {
-  width: 100%;
   height: auto;
-  margin-top: 35px;
+  width: 100%;
+}
+
+.nameText {
+  font-size: 25px;
+}
+
+.headerContainer {
+  font-family: Coronetscript, cursive;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px 25px 0 25px;
+  color: white;
+  text-shadow: 1px 1px 0 black;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  height: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+.page {
+  position: relative;
+}
+
+.footerContainer {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  justify-content: space-around;
+  margin: 0 35% 0 35%;
+}
+
+.pageTextContainer {
+  text-align: justify;
+  padding: 125px 10% 125px 10%;
+  font-family: 'Karla', sans-serif;
+}
+
+.hotelGridImage {
+  height: auto;
+  width: 100%;
+}
+
+.hotelGridItem {
+  text-align: justify;
+  padding: 10px;
+}
+
+.hotelGridContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 10px;
+  margin-left: -10x;
+  margin-right: -10px;
 }

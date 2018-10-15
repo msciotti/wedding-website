@@ -1,8 +1,75 @@
 import React, {Component} from 'react';
+import img from '../images/harborview.jpg';
+import styles from '../components/App.css';
+import LargeImage from './LargeImage';
+import HotelItem from './HotelItem';
+import {ACOMMODATIONS} from './Constants';
 
 class Accomodations extends Component {
   render() {
-    return <p>Accomodations</p>;
+    return (
+      <div className={styles.pageContainer}>
+        <LargeImage src={img} alt="Harborview Hotel" />
+        <div className={styles.pageTextContainer}>
+          <p>{ACOMMODATIONS.INTRO1}</p>
+          <p>{ACOMMODATIONS.INTRO2}</p>
+        </div>
+        <LargeImage src={img} alt="Harborview Hotel" />
+        <div className={styles.pageTextContainer}>
+          <h2>{ACOMMODATIONS.RENTAL_HOMES.HEADER}</h2>
+          <p>{ACOMMODATIONS.RENTAL_HOMES.BODY}</p>
+          <div className={styles.hotelGridContainer}>
+            <HotelItem image={ACOMMODATIONS.RENTAL_HOMES.AIRBNB.IMAGE} link={ACOMMODATIONS.RENTAL_HOMES.AIRBNB.LINK} />
+            <HotelItem image={ACOMMODATIONS.RENTAL_HOMES.VRBO.IMAGE} link={ACOMMODATIONS.RENTAL_HOMES.VRBO.LINK} />
+            <HotelItem
+              image={ACOMMODATIONS.RENTAL_HOMES.HOMEAWAY.IMAGE}
+              link={ACOMMODATIONS.RENTAL_HOMES.HOMEAWAY.LINK}
+            />
+          </div>
+        </div>
+        <LargeImage src={img} alt="Harborview Hotel" />
+        <div className={styles.pageTextContainer}>
+          <h2>Hotels</h2>
+          <p>{ACOMMODATIONS.HOTEL_BODY}</p>
+          <div>
+            <div className={styles.hotelGridContainer}>
+              {Object.keys(ACOMMODATIONS.HOTELS)
+                .slice(0, 3)
+                .map(hotel => {
+                  return (
+                    <HotelItem
+                      key={ACOMMODATIONS.HOTELS[hotel].NAME}
+                      image={ACOMMODATIONS.HOTELS[hotel].IMAGE}
+                      name={ACOMMODATIONS.HOTELS[hotel].NAME}
+                      description={ACOMMODATIONS.HOTELS[hotel].DESCRIPTION}
+                      phone={ACOMMODATIONS.HOTELS[hotel].PHONE}
+                      price={ACOMMODATIONS.HOTELS[hotel].PRICE}
+                      link={ACOMMODATIONS.HOTELS[hotel].LINK}
+                    />
+                  );
+                })}
+            </div>
+            <div className={styles.hotelGridContainer}>
+              {Object.keys(ACOMMODATIONS.HOTELS)
+                .slice(3, 6)
+                .map(hotel => {
+                  return (
+                    <HotelItem
+                      key={ACOMMODATIONS.HOTELS[hotel].NAME}
+                      image={ACOMMODATIONS.HOTELS[hotel].IMAGE}
+                      name={ACOMMODATIONS.HOTELS[hotel].NAME}
+                      description={ACOMMODATIONS.HOTELS[hotel].DESCRIPTION}
+                      phone={ACOMMODATIONS.HOTELS[hotel].PHONE}
+                      price={ACOMMODATIONS.HOTELS[hotel].PRICE}
+                      link={ACOMMODATIONS.HOTELS[hotel].LINK}
+                    />
+                  );
+                })}
+            </div>
+          </div>
+        </div>
+      </div>
+    );
   }
 }
 

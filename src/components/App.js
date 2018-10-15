@@ -1,16 +1,21 @@
 import React, {Component} from 'react';
-import styles from './App.css';
 import Main from './Main';
 import Header from './Header';
+import Footer from './Footer';
+import styles from '../components/App.css';
 
 class App extends Component {
   render() {
     return (
-      <div className={styles.outerPage}>
-        <Header />
-        <div className={styles.App}>
-          <header className={styles.appHeader} />
+      <div>
+        <div className={styles.header}>
+          <Header />
+        </div>
+        <div className={styles.page}>
           <Main />
+        </div>
+        <div className={styles.footer}>
+          <Footer />
         </div>
       </div>
     );

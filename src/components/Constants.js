@@ -106,3 +106,19 @@ export const ACOMMODATIONS = {
     },
   },
 };
+
+export const REGISTRIES = {
+  WILLIAM_SONOMA: {
+    LINK: 'https://www.williams-sonoma.com/registry/pgvlrjlfc5/registry-list.html',
+    IMAGE:
+      'https://static1.squarespace.com/static/53b0252be4b03918d8fe7010/t/5ac3e14170a6ad6c279191ef/1522786629659/Williams+Sonoma.png',
+  },
+  POTTERY_BARN: {
+    LINK: 'https://www.potterybarn.com/registry/500006670/registry-list.html',
+    IMAGE: 'https://cdn.worldvectorlogo.com/logos/pottery-barn.svg',
+  },
+  CRATE_AND_BARREL: {
+    LINK: 'https://www.crateandbarrel.com/gift-registry/makayla-humphrey-and-mason-sciotti/r5895308',
+    IMAGE: 'https://www.logolynx.com/images/logolynx/eb/eb69ec763edf8991d8c87d9742aaf57f.jpeg',
+  },
+};

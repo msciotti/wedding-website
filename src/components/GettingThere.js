@@ -1,14 +1,20 @@
 import React, {Component} from 'react';
 import styles from '../components/App.css';
 import beach from '../images/proposal.JPG';
+import sign from '../images/mvsign.jpg';
+import ferry from '../images/realferry.jpg';
+import plane from '../images/plane.jpg';
+import flower from '../images/hydrangea.jpg';
+import path from '../images/path.jpg';
 import LargeImage from './LargeImage';
 
 class GettingThere extends React.Component {
   render() {
     return (
       <div className={styles.pageContainer}>
-        <LargeImage src={beach} alt="Makayla and Mason" />
+        <LargeImage src={sign} alt="Makayla and Mason" />
         <div className={styles.pageTextContainer}>
+          <h1 className={styles.fancyText}>Getting There</h1>
           <div>
             <p>
               There are endless ways to make your trip to Martha's Vineyard. Between the planes, trains, automobiles,
@@ -32,9 +38,9 @@ class GettingThere extends React.Component {
             </p>
           </div>
         </div>
-        <LargeImage src={beach} />
+        <LargeImage src={ferry} />
         <div className={styles.pageTextContainer}>
-          <h2>By Car & Boat</h2>
+          <h1 className={styles.fancyText}>By Car & Boat</h1>
           <h3>Steamship Authority</h3>
           <p>
             The easiest option, and our preferred method of travel, is to drive to one of the ferries. The Steamship
@@ -72,9 +78,9 @@ class GettingThere extends React.Component {
             larger port at Wood's Hole if a change of plans is necessary.
           </p>
         </div>
-        <LargeImage src={beach} />
+        <LargeImage src={plane} />
         <div className={styles.pageTextContainer}>
-          <h2>By Plane</h2>
+          <h1 className={styles.fancyText}>By Plane</h1>
 
           <p>
             Though the Martha's Vineyard Airport (MVY) is small, it's busy! Several major airlines make trips to the
@@ -88,9 +94,9 @@ class GettingThere extends React.Component {
             off right at the ferry terminal.
           </p>
         </div>
-        <LargeImage src={beach} />
+        <LargeImage src={path} />
         <div className={styles.pageTextContainer}>
-          <h2>By Train</h2>
+          <h1 className={styles.fancyText}>By Train</h1>
 
           <p>
             The best way to get to the island by train is to take an Amtrak to Providence, RI. From there, you can book
@@ -101,7 +107,7 @@ class GettingThere extends React.Component {
             there together!
           </p>
         </div>
-        <LargeImage src={beach} />
+        <LargeImage src={flower} />
       </div>
     );
   }

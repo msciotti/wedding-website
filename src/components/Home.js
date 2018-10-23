@@ -10,12 +10,12 @@ class Home extends Component {
       <div className={styles.pageContainer}>
         <LargeImage src={beach} alt="Makayla and Mason" />
         <div className={styles.pageTextContainer}>
-          <div>
-            <h1>Celebrate with us!</h1>
+          <div className={styles.centerText}>
+            <h1 className={styles.fancyText}>Celebrate with us!</h1>
             <p>Saturday, October 5, 2019</p>
             <p>Martha's Vineyard, MA</p>
             <p>Makayla Rae Humphrey</p>
-            <p> - and - </p>
+            <p className={styles.fancyText}> - and - </p>
             <p>Mason Alexander Sciotti</p>
           </div>
         </div>

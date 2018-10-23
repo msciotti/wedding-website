@@ -70,3 +70,22 @@
   margin-left: -10x;
   margin-right: -10px;
 }
+
+.flexboxRowContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.smallImage {
+  height: 45%;
+  width: 45%;
+}
+
+.centerText {
+  text-align: center;
+}
+
+.fancyText {
+  font-family: 'Dancing Script', cursive;
+}

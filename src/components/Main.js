@@ -18,6 +18,7 @@ class Main extends Component {
           <Route path="/the-registry" component={Registry} />
           <Route exact path="/the-island/getting-there" component={GettingThere} />
           <Route exact path="/the-island/accomodations" component={Accomodations} />
+          <Route exact path="/the-island/things-to-do" component={Recommendations} />
         </Switch>
       </main>
     );

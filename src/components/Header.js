@@ -31,7 +31,11 @@ class Header extends Component {
                   Accomodations
                 </Link>
               </MenuItem>
-              <MenuItem>Things To Do</MenuItem>
+              <MenuItem>
+                <Link to="/the-island/things-to-do" style={{textDecoration: 'none'}}>
+                  Things to Do
+                </Link>
+              </MenuItem>
             </NavDropdown>
             <NavItem>
               <Link to="/the-registry" style={{textDecoration: 'none'}}>

@@ -14,9 +14,9 @@ class App extends Component {
         <div className={styles.page}>
           <Main />
         </div>
-        <div className={styles.footer}>
+        {/* <div className={styles.footer}>
           <Footer />
-        </div>
+        </div> */}
       </div>
     );
   }

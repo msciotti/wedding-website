@@ -17,6 +17,17 @@
   text-shadow: 1px 1px 0 black;
 }
 
+.no {
+  background-color: transparent;
+}
+
+.rowFlex {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  text-shadow: 1px 1px 0 black;
+}
+
 .header {
   position: absolute;
   top: 0;
@@ -60,15 +71,20 @@
 .hotelGridItem {
   text-align: justify;
   padding: 10px;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30vw;
 }
 
 .hotelGridContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-top: 10px;
-  margin-left: -10x;
-  margin-right: -10px;
+  display: flex !important;
+  justify-content: flex-start;
+  margin-left: -10px;
+}
+
+.hotelButton {
+  align-self: flex-start;
 }
 
 .flexboxRowContainer {
@@ -80,6 +96,10 @@
 .smallImage {
   height: 45%;
   width: 45%;
+}
+
+.fakeCenter {
+  margin-left: 25%;
 }
 
 .centerText {

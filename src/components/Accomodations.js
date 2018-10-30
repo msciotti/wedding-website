@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import img from '../images/harborview.jpg';
 import chairs from '../images/deckchairs.jpg';
 import lighthouse from '../images/lighthousenight.jpg';
 import boats from '../images/boats.jpg';
@@ -23,12 +22,9 @@ class Accomodations extends Component {
           <h1 className={styles.fancyText}>{ACOMMODATIONS.RENTAL_HOMES.HEADER}</h1>
           <p>{ACOMMODATIONS.RENTAL_HOMES.BODY}</p>
           <div className={styles.hotelGridContainer}>
-            <HotelItem image={ACOMMODATIONS.RENTAL_HOMES.AIRBNB.IMAGE} link={ACOMMODATIONS.RENTAL_HOMES.AIRBNB.LINK} />
-            <HotelItem image={ACOMMODATIONS.RENTAL_HOMES.VRBO.IMAGE} link={ACOMMODATIONS.RENTAL_HOMES.VRBO.LINK} />
-            <HotelItem
-              image={ACOMMODATIONS.RENTAL_HOMES.HOMEAWAY.IMAGE}
-              link={ACOMMODATIONS.RENTAL_HOMES.HOMEAWAY.LINK}
-            />
+            <HotelItem bText="Book AirBNB" link={ACOMMODATIONS.RENTAL_HOMES.AIRBNB.LINK} />
+            <HotelItem bText="Book VRBO" link={ACOMMODATIONS.RENTAL_HOMES.VRBO.LINK} />
+            <HotelItem bText="Book HomeAway" link={ACOMMODATIONS.RENTAL_HOMES.HOMEAWAY.LINK} />
           </div>
         </div>
         <LargeImage src={chairs} />

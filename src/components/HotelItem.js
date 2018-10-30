@@ -9,18 +9,18 @@ class HotelItem extends React.Component {
   }
 
   render() {
-    const {image, name, description, phone, price} = this.props;
+    const {image, name, description, phone, price, bText} = this.props;
     return (
       <div className={styles.hotelGridItem}>
-        <img className={styles.hotelGridImage} src={image} />
+        {image ? <img className={styles.hotelGridImage} src={image} /> : null}
         <div>
           <h3>{name}</h3>
           <p>{description}</p>
           <p>{phone}</p>
           <p>{price}</p>
         </div>
-        <Button bsStyle="primary" bsSize="large" onClick={this.handleClick}>
-          Learn More
+        <Button bsStyle="primary" bsSize="large" onClick={this.handleClick} className={styles.hotelButton}>
+          {!!bText ? bText : 'Learn More'}
         </Button>
       </div>
     );

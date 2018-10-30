@@ -1,3 +1,5 @@
+import clarion from '../images/clarion.jpg';
+
 export const ACOMMODATIONS = {
   INTRO1: `
     Martha's Vineyard is a vacation destination, which means that there are lots of places to stay. While
@@ -54,7 +56,7 @@ export const ACOMMODATIONS = {
       LINK: 'https://www.harborviewhotel.com/',
     },
     VINEYARD_SQUARE: {
-      NAME: 'Vineyard Square Hotel',
+      NAME: 'Vineyard Square',
       DESCRIPTION: `
         Right in the heart of Edgartown, the Vineyard Square Hotel gives you a great feeling of being in the middle of it all. You're just across the street from the local and national icon Vineyard Vines, as well as a number of quaint shops and delicious restaurants. If you're lucky, you may catch some live music outside in the courtyard!
       `,
@@ -91,7 +93,7 @@ export const ACOMMODATIONS = {
       `,
       PHONE: '508-627-5161',
       PRICE: '$$',
-      IMAGE: 'https://media-cdn.tripadvisor.com/media/photo-s/14/b1/b8/2d/area-attraction.jpg',
+      IMAGE: clarion,
       LINK: 'http://www.clarionmv.com/',
     },
     HOB_KNOB: {

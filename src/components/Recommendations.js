@@ -1,5 +1,9 @@
 import React, {Component} from 'react';
 import map from '../images/savethedate.png';
+import seagull from '../images/seagull.jpg';
+import chairs from '../images/beachchairs.png';
+import lobster from '../images/lobster.png';
+import sunset from '../images/sunset.jpg';
 import LargeImage from '../components/LargeImage';
 import styles from './App.css';
 
@@ -17,9 +21,9 @@ class Recommendations extends Component {
             the island. The outdoorsy types—ok a little less like us—can enjoy walks, bike rides, hikes, and the
             beautiful Great Outdoors that permeate the entire island. There really is something for everyone!
           </p>
-          <p>Also, there's an alpaca farm. Go see the alpaca farm.</p>
+          <p>Also, there's an alpaca farm(http://www.islandalpaca.com/). Go see the alpaca farm.</p>
         </div>
-        <LargeImage src={map} />
+        <LargeImage src={seagull} />
         <div className={styles.pageTextContainer}>
           <h1 className={styles.fancyText}>For the Vacationer</h1>
           <p>
@@ -37,9 +41,11 @@ class Recommendations extends Component {
           </p>
 
           <p>
-            Book a tee time at [Farm Neck Golf Club](LINK), a course along the water in Oak Bluffs with amazing views,
-            and a favorite course of President Obama when his family vacations on the island.
+            Book a tee time at Farm Neck Golf Club, a course along the water in Oak Bluffs with amazing views, and a
+            favorite course of President Obama when his family vacations on the island.
           </p>
+
+          <img src={chairs} className={[styles.smallImage, styles.fakeCenter].join(' ')} />
 
           <h1 className={styles.fancyText}>For the Foodie</h1>
           <p>
@@ -49,56 +55,72 @@ class Recommendations extends Component {
             short was a difficult task!
           </p>
 
-          <h3 className={styles.fancyText}>Breakfast</h3>
+          <h3 className={styles.fancyText}>Breakfast or Lunch</h3>
           <ul>
             <li>
-              [Right Fork Diner](LINK). A close-to-home favorite—literally!—that's just down the street from Makayla's
-              family home in Katama. Wake up with coffee and a classic diner-style breakfast overlooking the Katama Air
-              Field, a grass airport that's the home to many biplane flyers.
+              Right Fork Diner. A close-to-home favorite—literally!—that's just down the street from Makayla's family
+              home in Katama. Wake up with coffee and a classic diner-style breakfast overlooking the Katama Air Field,
+              a grass airport that's the home to many biplane flyers.
             </li>
             <li>
-              [Black Dog Bakery Café](LINK). A great place to grab breakfast if you're docking in Vineyard Haven, the
-              Black Dog Cafe and it's logo, a large black dog, are familiar sights to any New Englander. Remember: it's
-              never too early for a lobster roll.
+              Black Dog Bakery Café. A great place to grab breakfast if you're docking in Vineyard Haven, the Black Dog
+              Cafe and it's logo, a large black dog, are familiar sights to any New Englander. Remember: it's never too
+              early for a lobster roll.
             </li>
             <li>
-              [Espresso Love](LINK). Located in the heart of Downtown Edgartown, Espresso Love is one of our favorite
-              breakfast spots. Grab a bagel and a coffee and walk the brick sidewalks of Edgartown. Take a stroll down
-              South Water St. to see the really fantastic homes of the island.
+              Espresso Love. Located in the heart of Downtown Edgartown, Espresso Love is one of our favorite breakfast
+              spots. Grab a bagel and a coffee and walk the brick sidewalks of Edgartown. Take a stroll down South Water
+              St. to see the really fantastic homes of the island.
+            </li>
+            <li>Giordano's. A local favorite and the spot for many on-island summer jobs, Giordano's</li>
+            <li>
+              Among the Flowers Cafe. An outdoor patio and breakfast until 2 p.m. make for a wonderful morning or
+              afternoon spent taking in the sights and sounds of Edgartown.
             </li>
           </ul>
 
-          <h3 className={styles.fancyText}>Lunch</h3>
+          <h3 className={styles.fancyText}>Dinner</h3>
           <ul>
-            <li>[Giordano's](LINK). A local favorite and the spot for many on-island summer jobs, Giordano's</li>
+            <li>
+              L'etoile. A restaurant with upscale service located in the heart of Edgartown in a beautiful renovation
+              home. Enjoy delicacies like lobster and oysters and decadent desserts. Reservations recommended.
+            </li>
+            <li>State Road. An island favorite for farm to table dining. Reservations recommended.</li>
+            <li>
+              Rockfish. A favorite of Makayla and Mason. Head upstairs for seating by the warm brick pizza oven and grab
+              some drinks and a flatbread.
+            </li>
+            <li>
+              The Seafood Shanty. If you're on an island, you may as well get some seafood! Enjoy a casual dining room
+              or the rooftop bar on a beautiful night. No reservations, but often crowded.
+            </li>
+            <li>
+              The Atlantic. The iconic restaurant of Edgartown. Steak and seafood with a quintessentially Martha's
+              Vineyard vibe. Overlook the water and watch the waves and boaters. No reservations, so get there early!
+            </li>
           </ul>
 
-          <p>
-            Grab a meal in Edgartown, or venture over to Oak Bluffs or Vineyard Haven to one of the many delicious
-            restaurants. Dine at The Atlantic, or grab a drink at the rooftop bar of the Seafood Shanty. Don't forget to
-            stop by Back Door Donuts for a late night treat!
-          </p>
+          <img src={lobster} className={[styles.smallImage, styles.fakeCenter].join(' ')} />
 
           <h1 className={styles.fancyText}>For the Adventurer</h1>
           <p>
-            Rent a bike and see the island the way it was meant to be seen. Bike paths traverse almost the entire
-            island, and there's nothing better than getting lost in a good journey. True thrillseekers might be
-            interested in contacting the [Katama Airport](LINK) about biplane sightseeing tours of the island.
+            The Island is not only for relaxation! If you're the adventurous type, there are many adventures to be had
+            throughout Martha's Vineyard. Rent a paddleboard, kayak, body bound, surf board, or canoe from Island Spirit
+            Kayak or Wind's Up in Vineyard Haven. Head over to Classic Aviator's for biplane tours of Martha's Vineyard;
+            ask about the "thrill ride" package.
           </p>
 
-          <h1 className={styles.fancyText}>For the Romantic</h1>
           <p>
-            Drive out to Menemsha for a sunset so gorgeous that words don't do it justice. Bring some wine, snacks, and
-            a blanket and watch the sun dip down beneath the lazily-floating boats in the harbor. Also a fun picture
-            spot with giant lifeguard chairs!
+            For a more tame exploration expedition, rent a bicycle from Edgartown Bicycles or MV Bike Rentals. The
+            island is full of bike paths that go from town to town, beach to beach. So explore to your heart's content!
           </p>
 
-          <h1 className={styles.fancyText}>For the Tourist</h1>
           <p>
-            Explore all the little nooks and crannies of Edgartown, Oak Bluffs, and Vineyard Haven. Search the shops,
-            the snacks, and the sights that keep us coming back to Martha's Vineyard year after year.
+            Though the water will be cold, jumping off Jaw's Bridge is an island tradition. Jaw's was filmed on Martha's
+            Vineyard, but don't worry, we promise there's no sharks. Probably.
           </p>
         </div>
+        <LargeImage src={sunset} />
       </div>
     );
   }

@@ -103,7 +103,7 @@ class GettingThere extends React.Component {
             a car service like [Little Rest Limo] or hail an Uber and make your way to the [Vineyard Fast Ferry] in
             North Kingston, RI, a short 15 mile trip from the train station. Or, hop the bus to Woods Hole, or meet up
             with a friend that's also making their way down! The road to the ferry most often ends in Woods Hole, so
-            there's a good chance that you and a friend (maybne with a car) could meet somewhere like Providence and get
+            there's a good chance that you and a friend (maybe with a car) could meet somewhere like Providence and get
             there together!
           </p>
         </div>
